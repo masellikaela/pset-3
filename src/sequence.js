@@ -13,23 +13,19 @@ number3= Number(readlineSync.question());
    console.log("\nInvalid.")
 }
 else if (number1<number2 && number2<number3){
-     
-      if (number2-number1)===(number3-number2){
       console.log("\nStrictly increasing.")
-      }
-      else{
-      console.log("\nIncreasing.")
-    }
 }
+else if (number1<=number2 && number2<=number3){
+      console.log("\nIncreasing.")
+ 
 else if (number1==number2 && number2==number3 && number1==number3){
     console.log("\nEqual.")
 }
 else if (number1>number2 && number2>number3){
-     console.log("\nDecreasing.")}
+      console.log("\nStrictly Decreasing.")
 }
-//else if (){
-  // console.log("\nStrictly decreasing.")
-//}
-//else if (){
-    //  console.log("\nUnordered.")
-//}
+else if (number1>=number2 && number2>=number3){
+      console.log("\nDecreasing.")
+} else if ((number1 >= number2 && number2 <= number3) || (number1 <= number2 && number2 >= number3)) {
+      console.log("\nUnordered.\n")
+}

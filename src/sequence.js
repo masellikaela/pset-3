@@ -13,8 +13,10 @@ number3= Number(readlineSync.question());
    console.log("\nInvalid.")
 }
 else if (number1<number2 && number2<number3){
-      if (number2-number1)==(number3-number2){
-      console.log("\nStrictly increasing.")}
+     
+      if (number2-number1)===(number3-number2){
+      console.log("\nStrictly increasing.")
+      }
       else{
       console.log("\nIncreasing.")
     }

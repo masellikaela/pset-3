@@ -10,13 +10,13 @@ const change = Number(readlineSync.question("\n\nEnter a dollar amount: "));
 
 if (Number.isNaN(change)) {
       console.log("\nInvalid.")
-} else if (change < MIN || change > MAX) {
+} else if (change < MIN || change > MAX){
       console.log("\nInvalid.")
-} else
-
-{let quarteramount=	Math.floor(change/QUARTER);
-  let remainquarter=change%QUARTER;
-
+} else {
+ 
+	let quarteramount= Math.floor(change/QUARTER);
+ 	let remainquarter=change%QUARTER;
+	
 	let dimeamount= Math.floor(remainquarter/DIME);
 	let remaindime= remainquarter%DIME;
 

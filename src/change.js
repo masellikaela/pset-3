@@ -6,12 +6,12 @@ const DIME = 0.10;
 const NICKEL = 0.05;
 const PENNY = 0.01;
 
-const change = Number(readlineSync.question("\nEnter a dollar amount: "));
+const change = Number(readlineSync.question("\n\nEnter a dollar amount: "));
 
 if (Number.isNaN(change)) {
-      console.log("invalid")
+      console.log("\nInvalid.")
 } else if (change < MIN || change > MAX) {
-      console.log("invalid")
+      console.log("\nInvalid.")
 } else
 
 {let quarteramount=	Math.floor(change/QUARTER);

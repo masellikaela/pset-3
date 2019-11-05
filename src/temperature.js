@@ -1,7 +1,10 @@
 const readlineSync = require("readline-sync");
 
-change the variables !!!!!!!!!const theTemperature = Number(readlineSync.question("\nEnter a temperature: "));
-const theScale = readlineSync.question("Enter a scale: "))
+const temperature = Number(readlineSync.question("\n\nEnter a temperature: "));
+const scale = readlineSync.question("Enter a scale: ")
+
+const MAX = Number.MAX_SAFE_INTEGER;
+const MIN = Number.MIN_SAFE_INTEGER;
 
 const fahrenheitFreezingPoint = 32;
 const fahrenheitBoilingPoint = 212;
@@ -11,36 +14,36 @@ const kelvinFreezingPoint = 273;
 const kelvinBoilingPoint = 373;
 
 
-if (theTemperature < (Number.MIN_SAFE_INTEGER) || theTemperature > Number.MAX_SAFE_INTEGER) {
-      console.log("\nInvalid.\n")
+if (temperature < (Number.MIN_SAFE_INTEGER) || temperature > Number.MAX_SAFE_INTEGER) {
+      console.log("\nInvalid.")
 
-} else if (theTemperature <= fahrenheitFreezingPoint && (theScale == "F" || theScale == "f")){
-      console.log("\nSolid.\n")
+} else if (temperature <= fahrenheitFreezingPoint && (scale == "F" || scale == "f")){
+      console.log("\nSolid.")
 
-} else if ((theTemperature > fahrenheitFreezingPoint && theTemperature < fahrenheitBoilingPoint) && (theScale == "F" || theScale == "f")){
-      console.log("\nLiquid.\n")
+} else if ((temperature > fahrenheitFreezingPoint && temperature < fahrenheitBoilingPoint) && (scale == "F" || scale == "f")){
+      console.log("\nLiquid.")
 
-} else if (theTemperature >= fahrenheitBoilingPoint && (theScale == "F" || theScale == "f")){
-      console.log("\nGas.\n")
+} else if (temperature >= fahrenheitBoilingPoint && (scale == "F" || scale == "f")){
+      console.log("\nGas.")
 
-} else if (theTemperature <= celsiusFreezingPoint && (theScale == "C" || theScale == "c")){
-      console.log("\nSolid.\n")
+} else if (temperature <= celsiusFreezingPoint && (scale == "C" || scale == "c")){
+      console.log("\nSolid.")
 
-} else if ((theTemperature > celsiusFreezingPoint && theTemperature < celsiusBoilingPoint) && (theScale == "C" || theScale == "c")){
-      console.log("\nLiquid.\n")
+} else if ((temperature > celsiusFreezingPoint && temperature < celsiusBoilingPoint) && (scale == "C" || scale == "c")){
+      console.log("\nLiquid.")
 
-} else if (theTemperature >= celsiusBoilingPoint && (theScale == "C" || theScale == "c")){
-      console.log("\nGas.\n")
+} else if (temperature >= celsiusBoilingPoint && (scale == "C" || scale == "c")){
+      console.log("\nGas.")
 
-} else if (theTemperature <= kelvinFreezingPoint && (theScale == "K" || theScale == "k")){
-      console.log("\nSolid.\n")
+} else if (temperature <= kelvinFreezingPoint && (scale == "K" || scale == "k")){
+      console.log("\nSolid.")
 
-} else if ((theTemperature > kelvinFreezingPoint && theTemperature < kelvinBoilingPoint) && (theScale == "K" || theScale == "k")){
-      console.log("\nLiquid.\n")
+} else if ((temperature > kelvinFreezingPoint && temperature < kelvinBoilingPoint) && (scale == "K" || scale == "k")){
+      console.log("\nLiquid.")
 
-} else if (theTemperature >= kelvinBoilingPoint && (theScale == "K" || theScale == "k")){
-      console.log("\nGas.\n")
+} else if (temperature >= kelvinBoilingPoint && (scale == "K" || scale == "k")){
+      console.log("\nGas.")
 
 } else {
-      console.log("\nInvalid.\n")
+      console.log("\nInvalid.")
 }

@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const card = String(readlineSync.question("\nEnter a playing card: "));
+const card = String(readlineSync.question("\n\nEnter a playing card: "));
 
 let ace = "\nAce"
 let king = "\nKing"
@@ -108,11 +108,11 @@ if (card == "AS" || card == "as"){
 } else if (card == "4D" || card == "4d"){
     console.log(four.concat(diamonds) + "")
 } else if (card == "4C" || card == "4c"){
-    console.log(four.concat(clubs) + ".")
+    console.log(four.concat(clubs) + "")
 } else if (card == "3S" || card == "3s"){
-    console.log(three.concat(spades) + ".")
+    console.log(three.concat(spades) + "")
 } else if (card == "3H" || card == "3h"){
-    console.log(three.concat(hearts) + ".")
+    console.log(three.concat(hearts) + "")
 } else if (card == "3D" || card == "3d"){
     console.log(three.concat(diamonds) + "")
 } else if (card == "3C" || card == "3c"){

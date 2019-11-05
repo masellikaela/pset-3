@@ -6,44 +6,31 @@ const c = 2.00
 const d = 1.00
 const f = 0.00
 
-let gpa = form.gpa1.value; // ?????????????
+let gpa = form.gpa1.value; // ???????do i need this??????
 
 const grade = readlineSync.question("\nEnter a letter grade: "));
 
 if !(Number.isNaN(grade)) {
       console.log("Invalid.");
              } 
-  else if (grade.......) {
+  else if (grade....????...) {
       console.log("Invalid.");
               } 
-  else if (gpa == "A") {
+  else if (grade = "A+" || grade= "A") {
              gpa = 4.00;
              }
-  else if (gpa == "B") {
+  else if (grade == "B") {
              gpa = 3.00;
              }
-  else if (gpa == "C") {
+  else if (grade == "C") {
              gpa = 2.00;
              }
-  else if (gpa == "D") {
+  else if (grade == "D") {
              gpa = 1.00;
         	}
-  else if (gpa == "F") {
+  else if (grade == "F") {
              gpa = 0.00;
-        	}
-  else if (gpa == "a") {
-             gpa = 4.00;
-             }
-  else if (gpa == "b") {
-             gpa = 3.00;
-             }
-  else if (gpa == "c") {
-             gpa = 2.00;
-             }
-   else if (gpa == "d") {
-             gpa = 1.00;
-        	}
-    else if (gpa == "f") {
-             gpa = 0.00;
-        	}
-  console.log("Your GPA is " + gpa + ".")
+  }
+  
+
+//console.log("Your GPA is " + gpa + ".")
